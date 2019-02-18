@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmento2">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/Menu2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/textoSalon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginLeft="84dp"
+            android:layout_marginTop="94dp"
+            android:layout_marginEnd="85dp"
+            android:layout_marginRight="85dp"
+            android:layout_marginBottom="27dp"
+            android:ems="10"
+            android:hint="Ingrese Salon"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/textoSede"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/textoSede"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="83dp"
+            android:layout_marginLeft="83dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="86dp"
+            android:layout_marginRight="86dp"
+            android:layout_marginBottom="33dp"
+            android:ems="10"
+            android:hint="Ingrese Sede"
+            android:inputType="textPersonName"
+            android:text="Name"
+            app:layout_constraintBottom_toTopOf="@+id/textoEdificio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textoSalon2" />
+
+        <EditText
+            android:id="@+id/textoEdificio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="82dp"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="87dp"
+            android:layout_marginRight="87dp"
+            android:layout_marginBottom="53dp"
+            android:ems="10"
+            android:hint="Ingrese Edificio"
+            android:inputType="textPersonName"
+            android:text="Name"
+            app:layout_constraintBottom_toTopOf="@+id/botonAceptar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textoSede" />
+
+        <Button
+            android:id="@+id/botonAceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="139dp"
+            android:layout_marginLeft="139dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginEnd="157dp"
+            android:layout_marginRight="157dp"
+            android:layout_marginBottom="119dp"
+            android:text="Aceptar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textoEdificio" />
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>
