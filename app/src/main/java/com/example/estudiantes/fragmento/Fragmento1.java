@@ -12,33 +12,15 @@ public class Fragmento1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragmento1);
 
-        FragmentManager miManejador=getFragmentManager();
+        FragmentManager miManejador = getFragmentManager();
         FragmentTransaction miTransaccion = miManejador.beginTransaction();
         FragmentoMaster miFragmento = new FragmentoMaster();
-        miTransaccion.add(R.id.menu111, miFragmento);
+        miTransaccion.replace(R.id.menu111, miFragmento);
 
         miTransaccion.commit();
 
     }
-    public void agregarFragmento(View view){
-        FragmentManager miManejador =getFragmentManager();
-        FragmentTransaction miTransaccion = miManejador.beginTransaction();
-        FragmentoMaster miFragmento = new FragmentoMaster();
 
 
-        miTransaccion.add(R.id.menu111, miFragmento);
-
-        miTransaccion.commit();
-
-    }
-    public void agregarFragmento2(View view){
-        FragmentManager miManejador =getFragmentManager();
-        FragmentTransaction miTransaccion = miManejador.beginTransaction();
-        FragmentoMaster miFragmento = new FragmentoMaster();
-
-
-        miTransaccion.add(R.id.menu111, miFragmento);
-
-        miTransaccion.commit();
 }
-}
+

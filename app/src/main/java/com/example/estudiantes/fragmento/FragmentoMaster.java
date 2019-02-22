@@ -1,6 +1,8 @@
 package com.example.estudiantes.fragmento;
 
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
@@ -26,4 +28,26 @@ public class FragmentoMaster extends Fragment {
         return inflater.inflate(R.layout.fragment_fragmento_master, container, false);
     }
 
+
+    public void agregarFragmento2(View view){
+        FragmentManager miManejador =getFragmentManager();
+        FragmentTransaction miTransaccion = miManejador.beginTransaction();
+        FragmentoMaster miFragmento = new FragmentoMaster();
+
+
+        miTransaccion.replace(R.id.menu111, miFragmento);
+
+        miTransaccion.commit();
+    }
+    public void agregarFragmento(View view){
+        FragmentManager miManejador =getFragmentManager();
+        FragmentTransaction miTransaccion = miManejador.beginTransaction();
+        FragmentoMaster miFragmento = new FragmentoMaster();
+
+
+        miTransaccion.replace(R.id.menu111, miFragmento);
+
+        miTransaccion.commit();
+
+    }
 }
